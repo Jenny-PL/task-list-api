@@ -1,4 +1,4 @@
-from flask import Blueprint, jsonify, request, abort, make_response
+from flask import Blueprint, jsonify, request, abort, make_response, render_template
 from .models.task import Task
 from .models.goal import Goal
 from app import db
@@ -28,6 +28,7 @@ def create_one_goal():
     db.session.commit()
     response = {"goal": new_goal.to_dict()}    
     return jsonify(response), 201
+    
 
 
 # READ (CRUD): aka GET

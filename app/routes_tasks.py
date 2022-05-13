@@ -1,11 +1,12 @@
 import datetime
-from flask import Blueprint, jsonify, request, abort, make_response
+from flask import Blueprint, jsonify, request, abort, make_response, render_template
 from .models.task import Task
 from app import db
 import os
 import requests
 
 task_bp = Blueprint("task_bp",__name__, url_prefix="/tasks" )
+task_home_bp = Blueprint("task_home_bp",__name__, url_prefix="/home" )
 
 # Helper Functions:
 def complete_or_not(task):
@@ -127,3 +128,7 @@ def delete_one_task(task_id):
     response = {'details': f'Task {task.task_id} "{task.title}" successfully deleted'}
     return jsonify(response), 200
 
+### Playing around with Flask templates:
+@task_home_bp.route("", methods = ['GET'])
+def home_page():
+    return render_template('index.html')
