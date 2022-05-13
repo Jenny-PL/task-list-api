@@ -129,6 +129,6 @@ def delete_one_task(task_id):
     return jsonify(response), 200
 
 ### Playing around with Flask templates:
-@task_home_bp.route("", methods = ['GET'])
+@task_home_bp.route("", methods=['GET'])
 def home_page():
     return render_template('index.html')
