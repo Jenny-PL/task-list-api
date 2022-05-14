@@ -1,6 +1,6 @@
 import datetime
 from flask import Blueprint, jsonify, request, abort, make_response, render_template
-from .models.task import Task
+from ..models.task import Task
 from app import db
 import os
 import requests

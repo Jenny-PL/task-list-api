@@ -30,13 +30,21 @@ def create_app(test_config=None):
     migrate.init_app(app, db)
 
     # Register Blueprints here
-    from .routes_tasks import task_bp
+    from app.routes.routes_tasks import task_bp
     app.register_blueprint(task_bp)
 
-    from .routes_goals import goal_bp
+    from app.routes.routes_goals import goal_bp
     app.register_blueprint(goal_bp)
 
-    from .routes_tasks import task_home_bp
+    from app.routes.routes_tasks import task_home_bp
     app.register_blueprint(task_home_bp)
+
+    # follows nina's structure... not sure what these are doing
+    @app.route("/")
+    @app.route("/main")
+    @app.route("/index")
+    @app.route("/about")
+    def about():
+        return "<h1> The Task List Project</h1>"    
 
     return app
