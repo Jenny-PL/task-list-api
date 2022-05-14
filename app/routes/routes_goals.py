@@ -1,6 +1,6 @@
 from flask import Blueprint, jsonify, request, abort, make_response, render_template
-from .models.task import Task
-from .models.goal import Goal
+from ..models.task import Task
+from ..models.goal import Goal
 from app import db
 from .routes_tasks import complete_or_not, validate_task, get_all_tasks
 
