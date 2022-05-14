@@ -1,7 +1,12 @@
 h1 {
     text-align: center;
     color:blueviolet;
-    background-color: azure;
     size: 15%;
 }
 
+div {
+    text-align: center;
+}
+body{
+    background-color: azure;
+}
