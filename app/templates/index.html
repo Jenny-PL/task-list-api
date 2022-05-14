@@ -6,19 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Task List</title>
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.1.0/build/pure-min.css"integrity="sha384-yHIFVG6ClnONEA5yB5DJXfW2/KC173DIQrYoZMEtBvGzmf0PKiGyNEqe9N6BNDBH" crossorigin="anonymous">
 </head>
 <body>
     <h1>Jen's Task List</h1>
     <div>
+        <img src="https://images.unsplash.com/photo-1642543492457-39a2ce63bb59?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="A picture of a task list"> 
+        <!-- pic by Kelly Sikkema -->
+
+        <h2>Update my to do list:</h2>
         <ul>
-            <li>Make a new task</li>
-            <li>Mark a task complete</li>
-            <li>Need to do the task again? Mark it Incomplete</li>
-            <li>Delete a Task</li>
+            <li><button class="button-success pure-button"></button>    Add a task </li> 
+            <li> <button class="button-success pure-button"></button>   Delete a Task </li> 
+            <li>  <button class="button-success pure-button"></button>  Mark a task complete </li> 
+            <li> <button class="button-success pure-button"></button>   Mark a task incomplete </li> 
+
         </ul>
-        <img src="" alt="">
+
+        
+        
     </div>
-    
     
 </body>
 </html>

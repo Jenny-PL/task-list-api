@@ -1,12 +1,26 @@
-h1 {
-    text-align: center;
-    color:blueviolet;
-    size: 15%;
-}
-
-div {
-    text-align: center;
-}
 body{
     background-color: azure;
 }
+img {
+    size: 50%;
+}
+h1 {
+    text-align: center;
+    color:darkblue;
+    size: 15%;
+}
+div {
+    padding-left: 15%;
+    text-align: left;
+}
+li {
+    padding-bottom: 18px;
+    list-style-type: none;
+}
+.button-success {
+    color: white;
+    border-radius: 4px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    background: rgb(66, 184, 221);   
+}
+
