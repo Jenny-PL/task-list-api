@@ -39,7 +39,7 @@ def create_app(test_config=None):
     from app.routes.routes_tasks import task_home_bp
     app.register_blueprint(task_home_bp)
 
-    # follows nina's structure... not sure what these are doing
+    # follows nina's structure... not sure what these are doing??
     @app.route("/")
     @app.route("/main")
     @app.route("/index")
